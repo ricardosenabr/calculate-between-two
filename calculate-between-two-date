@@ -1,0 +1,16 @@
+
+<?php
+/*
+* RETURN MONTHS IN THE TWO DATE FOR PHP
+*RETORNAR A QT DE MESES ENTRE DUAS DATAS
+*/
+
+
+$date1 = NOW_DATE;
+$date2 = $saida->dt_limite_compra;
+$d1=new DateTime($date2); 
+$d2=new DateTime($date1);                                  
+$Months = $d2->diff($d1); 
+$diffmes = (($Months->y) * 12) + ($Months->m);
+
+?>
